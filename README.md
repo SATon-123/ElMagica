@@ -18,9 +18,15 @@ Ru:
 
 ## Попробовать
 
-Нужна **Java 17+**, рекомендую Java 21. Скачай архив игры из **Releases**, распакуй и запусти `play/Run-ElMagica.bat`. Java в комплект не входит. 
+Нужна **Java 17+**, рекомендую Java 21. Java в комплект не входит.
 
-Для запуска из исходников на Windows:
+1. Скачай [ElMagica-Beta1.0-play.zip](https://github.com/SATon-123/ElMagica/releases/download/v1.0.0-beta.1/ElMagica-Beta1.0-play.zip).
+2. Распакуй архив целиком и открой папку `play`.
+3. Запусти `Run-ElMagica.bat` из этой папки.
+
+Этот файл находится в архиве игры. В исходниках (`Source code` или `ElMagica-Beta1.0-source.zip`) его нет. 
+
+Для запуска из исходников на Windows нужен JDK (рекомендую Java 21). Открой PowerShell в корне распакованного проекта — рядом с `gradlew.bat` и `settings.gradle` — и выполни:
 
 ```powershell
 .\gradlew.bat lwjgl3:run
@@ -56,12 +62,18 @@ Right now, this is a working beta for testing the mechanics. I want to find out 
 
 ## Try it out
 
-Java 17+ is required. Java 21 is recommended. Download the game archive from Releases, extract it, and run `play/Run-ElMagica.bat`. Java is not included. 
+Java 17+ is required; Java 21 is recommended. Java is not included.
 
-To run from source on Windows:
+1. Download [ElMagica-Beta1.0-play.zip](https://github.com/SATon-123/ElMagica/releases/download/v1.0.0-beta.1/ElMagica-Beta1.0-play.zip).
+2. Extract the whole archive and open the `play` folder.
+3. Run `Run-ElMagica.bat` from that folder.
+
+This launcher is in the playable archive, not in `Source code` or `ElMagica-Beta1.0-source.zip`. 
+
+To run from source on Windows, install a JDK (Java 21 recommended). Open PowerShell in the extracted project root, next to `gradlew.bat` and `settings.gradle`, and run:
 
 ```powershell
-.\gradlew.bat lwjgl3
+.\gradlew.bat lwjgl3:run
 ```
 
 ## If you want to explore the code
